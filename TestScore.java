@@ -1,25 +1,24 @@
 package Practice;
 import java.util.Scanner;
 public class TestScore {
-
 	private static Scanner reader;
-
 	public static void main(String[] args) {
+		/**è¾“å…¥æˆç»©[0-100]ï¼Œè¿”å›æˆç»©åŒºé—´*/
 		reader = new Scanner(System.in);
-		System.out.print("ÇëÊäÈë³É¼¨");
+		System.out.print("è¯·è¾“å…¥æˆç»©");
 		double Score = reader.nextDouble();
 		if(Score > 100 || Score < 0) {
-			System.out.println("³É¼¨²»ºÏ·¨");
+			System.out.println("æˆç»©ä¸åˆæ³•");
 		}else if(Score >= 90) {
-			System.out.println("³É¼¨µÈ¼¶ÎªA");
+			System.out.println("æˆç»©ç­‰çº§ä¸ºA");
 		}else if(Score >=  80) {
-			System.out.println("³É¼¨µÈ¼¶ÎªB");
+			System.out.println("æˆç»©ç­‰çº§ä¸ºB");
 		}else if(Score >= 70) {
-			System.out.println("³É¼¨µÈ¼¶ÎªC");
+			System.out.println("æˆç»©ç­‰çº§ä¸ºC");
 		}else if(Score >= 60) {
-			System.out.println("³É¼¨µÈ¼¶ÎªD");
+			System.out.println("æˆç»©ç­‰çº§ä¸ºD");
 		}else{
-			System.out.println("³É¼¨µÈ¼¶ÎªE");
+			System.out.println("æˆç»©ç­‰çº§ä¸ºE");
 		
 		}
 	}
