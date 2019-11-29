@@ -7,7 +7,7 @@ public class TestScore {
 		reader = new Scanner(System.in);
 		System.out.print("请输入成绩");
 		double Score = reader.nextDouble();
-		if(Score > 100 || Score < 0) {
+		/*if(Score > 100 || Score < 0) {
 			System.out.println("成绩不合法");
 		}else if(Score >= 90) {
 			System.out.println("成绩等级为A");
@@ -20,7 +20,15 @@ public class TestScore {
 		}else{
 			System.out.println("成绩等级为E");
 		
+		}*/
+		int s = (int)(Score/10);
+		switch(s){
+			case 6:System.out.println("成绩等级为D");break;
+			case 7:System.out.println("成绩等级为C");break;
+			case 8:System.out.println("成绩等级为B");break;
+			case 9:System.out.println("成绩等级为A");break;
+			case 10:System.out.println("恭喜您获得满分");break;
+			default:System.out.println("成绩等级为E");
 		}
 	}
-
 }
