@@ -5,9 +5,9 @@ public class Test01 {
 
 	public static void main(String[] args) {
 		reader = new Scanner(System.in);
-		System.out.println("ÊäÈë×Ô±äÁ¿x");
+		System.out.println("è¯·è¾“å…¥è‡ªå˜é‡x");
 		Double x = reader.nextDouble();
 		double y = F.f(x);
-		System.out.println("º¯ÊıµÄÖµÎª"+y);
+		System.out.println("å› å˜é‡yçš„å€¼æ˜¯ï¼š"+y);
 	}
 }
