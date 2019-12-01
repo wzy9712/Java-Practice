@@ -1,16 +1,16 @@
 package Practice;
 
 public class MianBaoCar extends Car{
-	//¶¨ÒåÃæ°ü³µÀà£¬¼Ì³ĞÆû³µÀà£¬Ôö¼ÓÊôĞÔÔØ¿ÍÁ¿
+	//å®šä¹‰é¢åŒ…è½¦ç±»ï¼Œç»§æ‰¿æ±½è½¦ç±»ï¼Œå¢åŠ å±æ€§è½½å®¢é‡
 	int capacity;
-	//¹¹Ôì·½·¨£¬super
+	//æ„é€ æ–¹æ³•ï¼Œsuper
 	public MianBaoCar(int wheelNumber, double carWeight,int capacity) {
 		/*this.wheelNumber = wheelNumber;
 		this.carWeight = carWeight;*/
 		super(wheelNumber, carWeight);
 		this.capacity = capacity;
 	}
-	//¶ÁÈ¡ºÍĞŞ¸Ä±äÁ¿
+	//è¯»å–å’Œä¿®æ”¹å˜é‡
 	public int getCapacity() {
 		return capacity;
 	}
