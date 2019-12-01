@@ -1,19 +1,19 @@
 package Practice;
 
 public class Line {
-	//Á½¸öÊµÀıÀàĞÍµã±äÁ¿
+	//ä¸¤ä¸ªå®ä¾‹ç±»å‹ç‚¹å˜é‡
 	private Point p1;
 	private Point p2;
-	//¹¹Ôì·½·¨
+	//æ„é€ æ–¹æ³•
 	public Line(Point p1, Point p2) {
 		this.p1 = p1;
 		this.p2 = p2;
 	}
-	//ÇóÏß¶Î³¤¶È
+	//æ±‚çº¿æ®µé•¿åº¦
 	public double length(){
 		return p1.distance(p2);
 	}
-	//ÅĞ¶ÏÏß¶ÎÊÇ·ñË®Æ½
+	//åˆ¤æ–­çº¿æ®µæ˜¯å¦æ°´å¹³
 	public boolean isLelve() {
 		if(p1.getY() == p2.getY()) {
 			return true;
@@ -21,7 +21,7 @@ public class Line {
 			return false;
 		}
 	} 
-	//ÅĞ¶ÏÏß¶ÎÊÇ·ñ´¹Ö±
+	//åˆ¤æ–­çº¿æ®µæ˜¯å¦å‚ç›´
 	public boolean isVertical() {
 		if(p1.getX() == p2.getX()) {
 			return true;
@@ -29,18 +29,18 @@ public class Line {
 			return false;
 		}
 	}
-	//ÇóĞ±ÂÊ
+	//æ±‚æ–œç‡
 	public double slope() {
 		double k;
 		if(isVertical()){
-			System.out.println("¸ÃÏß¶ÎÊÇ´¹Ö±µÄ¡£Ğ±ÂÊÎŞÇî´ó");
+			System.out.println("è¯¥çº¿æ®µæ˜¯å‚ç›´çš„ã€‚æ–œç‡æ— ç©·å¤§");
 		}else {
 			k = (p2.getY()-p1.getY())/(p2.getX()-p1.getX());
 			return k;
 		}
 		return 0.0;
 	}
-	//ÇóÖĞµã
+	//æ±‚ä¸­ç‚¹
 	public Point midpoint() {	
 		Point p3 = new Point();
 		p3.setX((p1.getX()+p2.getX())/2);
