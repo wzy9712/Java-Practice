@@ -3,7 +3,7 @@ package Practice;
 public class TestRectangle {
 
 	public static void main(String[] args) {
-		//¾ØĞÎ²âÊÔÀà
+		//Å¾Å˜ÄÃË›Ã¢Ä˜Ã”Å”Å•
 		Rectangle o1 = new Rectangle();
 		o1.setHeight(2);
 		o1.setWidth(3);
