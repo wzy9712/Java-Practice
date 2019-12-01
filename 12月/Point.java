@@ -1,10 +1,10 @@
 package Practice;
 import java.lang.Math;
 public class Point {
-	/**´´½¨µãÀà£¬ÓĞºá×ø±êºÍ×İ×ø±êÁ½ÖÖÊôĞÔ
-	 * ·½·¨ÓĞÕ¹Ê¾ºÍ¼ÆËãÁ½¸öµãµÄ¾àÀë*/
+	/**åˆ›å»ºç‚¹ç±»ï¼Œæœ‰æ¨ªåæ ‡å’Œçºµåæ ‡ä¸¤ç§å±æ€§
+	 * æ–¹æ³•æœ‰å±•ç¤ºå’Œè®¡ç®—ä¸¤ä¸ªç‚¹çš„è·ç¦»*/
 	private double x,y;
-	//Ë½ÓĞ±äÁ¿x£¬y¶ÁÈ¡ºÍĞŞ¸Ä
+	//ç§æœ‰å˜é‡xï¼Œyè¯»å–å’Œä¿®æ”¹
 	public double getX() {
 		return x;
 	}
@@ -17,7 +17,7 @@ public class Point {
 	public void setY(double y) {
 		this.y = y;
 	}
-	//ÎŞ²ÎÊı¹¹Ôì·½·¨ºÍÓĞ²ÎÊı¹¹Ôì·½·¨
+	//æ— å‚æ•°æ„é€ æ–¹æ³•å’Œæœ‰å‚æ•°æ„é€ æ–¹æ³•
 	public Point() {
 		this(0.0,0.0);
 	}
@@ -25,11 +25,11 @@ public class Point {
 		this.x = x;
 		this.y = y;
 	}
-	//Õ¹Ê¾·½·¨£¬Õ¹Ê¾ºá×İ×ø±ê
+	//å±•ç¤ºæ–¹æ³•ï¼Œå±•ç¤ºæ¨ªçºµåæ ‡
 	public String Show() {
-		return ("ºá×ø±ê£º"+x+"	"+"×İ×ø±ê£º"+y);
+		return ("æ¨ªåæ ‡ï¼š"+x+"	"+"çºµåæ ‡ï¼š"+y);
 	} 
-	//¼ÆËã´ËµãºÍÆäËûµãµÄ¾àÀë£¬Ã¿¸öµã¶ÔÏó¶¼ÓĞ
+	//è®¡ç®—æ­¤ç‚¹å’Œå…¶ä»–ç‚¹çš„è·ç¦»ï¼Œæ¯ä¸ªç‚¹å¯¹è±¡éƒ½æœ‰
 	public double distance(Point p) {
 		double d = 0;
 		d =Math.sqrt(Math.pow((this.x-p.x),2)+Math.pow((this.y-p.y),2));
