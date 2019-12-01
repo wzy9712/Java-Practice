@@ -7,10 +7,10 @@ public class Triangle {
 	private static Scanner reader;
 
 	public static void main(String[] args) {
-		//ÅĞ¶ÏÈı½ÇĞÎ
+		//åˆ¤æ–­ä¸‰è§’å½¢
 		
 		reader = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÈı½ÇĞÎÈı±ßÖµ");
+		System.out.println("è¯·è¾“å…¥ä¸‰è§’å½¢ä¸‰è¾¹å€¼");
 		int a = reader.nextInt();
 		int b = reader.nextInt();
 		int c = reader.nextInt();
@@ -21,14 +21,14 @@ public class Triangle {
 class TestTriangle{
 	public static void test(int a, int b,int c) {
 		if((a+b) > c && (a+c) > b && (b+c) > a) {
-			System.out.print("ÄÜ¹¹³ÉÈı½ÇĞÎ");
+			System.out.print("èƒ½æ„æˆä¸‰è§’å½¢");
 			if(a==b && a==c) {
-				System.out.println("£»ÇÒÊÇµÈ±ßÈı½ÇĞÎ");
+				System.out.println("ï¼›ä¸”æ˜¯ç­‰è¾¹ä¸‰è§’å½¢");
 			}else{
-				System.out.println("£»µ«²»ÊÇµÈ±ßÈı½ÇĞÎ");
+				System.out.println("ï¼›ä½†ä¸æ˜¯ç­‰è¾¹ä¸‰è§’å½¢");
 			}
 		}else {
-			System.out.println("²»ÄÜ¹¹³ÉÈı½ÇĞÎ");
+			System.out.println("ä¸èƒ½æ„æˆä¸‰è§’å½¢");
 		}
 	}
 }
