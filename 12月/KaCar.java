@@ -1,16 +1,16 @@
 package Practice;
 
 public class KaCar extends Car{
-	//¶¨Òå¿¨³µÀà£¬¼Ì³ĞÆû³µÀà£¬Ìí¼ÓÊôĞÔ×°ÔØÁ¿
+	//å®šä¹‰å¡è½¦ç±»ï¼Œç»§æ‰¿æ±½è½¦ç±»ï¼Œæ·»åŠ å±æ€§è£…è½½é‡
 	double loadWeight;
-	//¹¹Ôì·½·¨£¬superÓ¦ÓÃ
+	//æ„é€ æ–¹æ³•ï¼Œsuperåº”ç”¨
 	public KaCar(int wheelNumber, double carWeight,double loadWeight) {
 		/*this.wheelNumber = wheelNumber;
 		this.carWeight = carWeight;*/
 		super(wheelNumber,carWeight);
 		this.loadWeight = loadWeight;
 	}
-	//¶ÁÈ¡ºÍĞŞ¸Ä±äÁ¿
+	//è¯»å–å’Œä¿®æ”¹å˜é‡
 	public double getLoadWeight() {
 		return loadWeight;
 	}
