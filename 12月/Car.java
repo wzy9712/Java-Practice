@@ -1,10 +1,10 @@
 package Practice;
 
 public class Car {
-	//¶¨ÒåÆû³µÀà
+	//å®šä¹‰æ±½è½¦ç±»
 	int wheelNumber;
 	double carWeight;
-	//¹¹Ôì·½·¨£¬³õÊ¼»¯ÊôĞÔ±äÁ¿
+	//æ„é€ æ–¹æ³•ï¼Œåˆå§‹åŒ–å±æ€§å˜é‡
 	public Car() {
 		this(0,0.0);
 	}
@@ -12,7 +12,7 @@ public class Car {
 		this.wheelNumber = wheelNumber;
 		this.carWeight = carWeight;
 	}
-	//¶ÁÈ¡ºÍĞŞ¸ÄÊôĞÔ±äÁ¿
+	//è¯»å–å’Œä¿®æ”¹å±æ€§å˜é‡
 	public int getWheelNumber() {
 		return wheelNumber;
 	}
@@ -25,7 +25,7 @@ public class Car {
 	public void setCarWeight(double carWeight) {
 		this.carWeight = carWeight;
 	}
-	//Á½¸ö×ÓÀàÖĞµÄ·½·¨£¬¶àÌ¬£¬±àÒëÆÚ²»±¨´í
+	//ä¸¤ä¸ªå­ç±»ä¸­çš„æ–¹æ³•ï¼Œå¤šæ€ï¼Œç¼–è¯‘æœŸä¸æŠ¥é”™
 	public double getLoadWeight() {
 		return 0;
 	}
